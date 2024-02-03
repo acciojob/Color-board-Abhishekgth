@@ -1,32 +1,27 @@
 /*  your css code here. If applicable */
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.item {
-	width:70px;
-	height:70px;
-    background-color: #ccc;
-    padding: 10px;
-	font-size:32px;
+.square {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(29, 29, 29);
+  margin: 2px;
 }
-.yo-1{
-	order:2;
-	background-color:red;
+
+.square:hover {
+  animation: 1s changing linear forwards;
 }
-.yo-2{
-	order:3;
-	background-color:blue;
-}
-.yo-3{
-	order:1;
-	background-color:green;
-}
-.holder{
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+
+@keyframes changing {
+  0% {
+    background-color: rgb(29, 29, 29);
+  }
+  100% {
+    background-color: white;
+  }
 }
